@@ -217,7 +217,8 @@ quit_button = tk.Button(root, text="Quit", font=("Arial", 14), command=quit_prog
 quit_button.grid(row=4, column=1, pady=10)
 
 
-# Start the UI loop
-root.after(100, update_prediction_text)
-root.after(2800, update_elixir_count)  # Elixir updates by 1 every 2.8 seconds
-root.mainloop()
+if __name__ == "__main__":
+    # Start the UI loop
+    root.after(100, update_prediction_text)
+    root.after(2800, update_elixir_count)  # Elixir updates by 1 every 2.8 seconds
+    root.mainloop()
