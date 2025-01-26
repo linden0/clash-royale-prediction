@@ -1,11 +1,15 @@
 
-# Clash Royale Card Classifier
+# ClashSense
 
 ## Description
 This project has two goals:
 - Classify verbal input of opponent's cards accurately
 - Use the predictions to keep track of the opponent's cards and elixir
 Essentially, as you are playing, speak the cards that your opponent plays (Giant, Knight, etc.) and the program will display your opponent's hand and elixir count. Here's a demo:
+
+
+https://github.com/user-attachments/assets/b8ed995f-3ca9-4c1f-8057-b7e4809092e6
+
 
 ## How it Works
 This project classifies audio using a PyTorch CNN on audio data represented by Mel-frequency cepstral coefficients (MFCCs). This classifer serves as the base for the realtime, continuous speech detection system. It takes audio segments, applies Voice Activity Detection, and if speech is detected, classifies the segment. 
